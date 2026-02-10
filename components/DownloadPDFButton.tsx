@@ -53,7 +53,7 @@ export default function DownloadPDFButton() {
           element.offsetWidth * 2,
           element.offsetHeight * 2,
         );
-        pdf.save("Mansi-Nirbhay-Wedding-Invitation.pdf");
+        pdf.save("Manshi-Nirbhay-Wedding-Invitation.pdf");
       } finally {
         // Restore hidden state
         element.style.zIndex = originalZIndex;

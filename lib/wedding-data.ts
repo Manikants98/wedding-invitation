@@ -1,15 +1,15 @@
 export const weddingData = {
   meta: {
-    title: "Wedding Invitation - Mansi & Nirbhay",
-    description: "Celebrate the wedding of Mansi Gangwar & Dr. Nirbhay Singh",
-    url: "https://mansi-nirbhay-wedding.vercel.app/",
+    title: "Wedding Invitation - Manshi & Nirbhay",
+    description: "Celebrate the wedding of Manshi Gangwar & Dr. Nirbhay Singh",
+    url: "https://manshi-nirbhay-wedding.vercel.app/",
     ogImage: "/image.png",
   },
   intro: {
     text: "With divine blessings, we invite you to celebrate the wedding of",
   },
   bride: {
-    name: "Mansi Gangwar",
+    name: "Manshi Gangwar",
     title: "Daughter of",
     parents: "Mrs. Sushma Gangwar & Mr. Swatantra Kumar Gangwar",
     grandparentsTitle: "Granddaughter of",
@@ -60,7 +60,7 @@ export const weddingData = {
   },
   share: {
     message:
-      "Inviting you to celebrate the wedding of Mansi & Nirbhay! Join us digitally here: ",
+      "Inviting you to celebrate the wedding of Manshi & Nirbhay! Join us digitally here: ",
   },
   music: {
     url: "/music/sehnai.mp3",

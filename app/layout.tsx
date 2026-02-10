@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     title: weddingData.meta.title,
     description: weddingData.meta.description,
     url: weddingData.meta.url,
-    siteName: "Mansi & Nirbhay Wedding",
+    siteName: "Manshi & Nirbhay Wedding",
     images: [
       {
         url: weddingData.meta.ogImage,
         width: 1200,
         height: 630,
-        alt: "Wedding Invitation - Mansi & Nirbhay",
+        alt: "Wedding Invitation - Manshi & Nirbhay",
       },
     ],
     type: "website",
