@@ -53,7 +53,9 @@ export default function HeroSection() {
               {weddingData.bride.name}
             </h2>
             <div className="text-sm md:text-base text-gray-800 space-y-2 font-serif">
-              <p className="uppercase tracking-widest text-xs text-gold-dark font-bold">{weddingData.bride.title}</p>
+              <p className="uppercase tracking-widest text-xs text-gold-dark font-bold">
+                {weddingData.bride.title}
+              </p>
               <p className="font-bold text-maroon text-lg">
                 {weddingData.bride.parents}
               </p>
@@ -70,17 +72,21 @@ export default function HeroSection() {
         </SectionWrapper>
 
         <SectionWrapper delay={0.6} className="my-4 md:my-0">
-          <div className="text-5xl md:text-7xl text-gold-gradient font-script drop-shadow-md">&</div>
+          <div className="text-5xl md:text-7xl text-gold-gradient font-script drop-shadow-md">
+            &
+          </div>
         </SectionWrapper>
 
         {/* Groom */}
         <SectionWrapper delay={0.8} className="w-full max-w-md">
-          <div className="relative p-8 border-4 border-double border-gold/40 bg-white/40 backdrop-blur-sm rounded-lg hover:bg-white/50 transition-colors duration-300 shadow-lg">
+          <div className="relative p-6 border-4 border-double border-gold/40 bg-white/40 backdrop-blur-sm rounded-lg hover:bg-white/50 transition-colors duration-300 shadow-lg">
             <h2 className="text-4xl md:text-5xl text-maroon mb-4 drop-shadow-sm font-script">
               {weddingData.groom.name}
             </h2>
             <div className="text-sm md:text-base text-gray-800 space-y-2 font-serif">
-              <p className="uppercase tracking-widest text-xs text-gold-dark font-bold">{weddingData.groom.title}</p>
+              <p className="uppercase tracking-widest text-xs text-gold-dark font-bold">
+                {weddingData.groom.title}
+              </p>
               <p className="font-bold text-maroon text-lg">
                 {weddingData.groom.parents}
               </p>
