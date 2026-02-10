@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FFF5E1;
+  --color-maroon: #800020;
+  --color-red-rich: #A50021;
+  --color-gold: #DAA520;
+  --color-gold-light: #FFD700;
+  --color-gold-dark: #B8860B;
+  --color-saffron: #FF9933;
+  
+  --font-playfair: var(--font-playfair);
+  --font-great-vibes: var(--font-great-vibes);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-spin-slow: spin 12s linear infinite;
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
+/* Custom Utilities */
+.text-gold-gradient {
+  background: linear-gradient(to right, #B8860B, #FFD700, #B8860B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(to right, #B8860B, #DAA520, #F4C430, #DAA520, #B8860B);
+}
+
+.border-gold-gradient {
+  border-image: linear-gradient(to right, #B8860B, #FFD700, #B8860B) 1;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-maroon);
+  font-family: var(--font-playfair), serif;
+  background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+}
+
+h1, h2, h3, .font-script {
+  font-family: var(--font-great-vibes), cursive;
+}
