@@ -1,4 +1,4 @@
-# Royal Indian Wedding Invitation - Manasi & Nirbhay
+# Royal Indian Wedding Invitation - Mansi & Nirbhay
 
 A mobile-first, cinematic digital wedding invitation built with Next.js 14, TypeScript, Tailwind CSS, and Framer Motion.
 
@@ -16,6 +16,7 @@ A mobile-first, cinematic digital wedding invitation built with Next.js 14, Type
 ## Getting Started
 
 1.  **Install Dependencies**:
+
     ```bash
     npm install
     ```

@@ -4,25 +4,40 @@ import { motion } from "framer-motion";
 import { Heart } from "lucide-react";
 import SectionWrapper from "./SectionWrapper";
 import { weddingData } from "@/lib/wedding-data";
+import { usePrint } from "@/contexts/PrintContext";
 
 export default function HeroSection() {
+  const isPrint = usePrint();
+
   return (
     <div className="relative pt-20 pb-12 px-6 text-center overflow-hidden">
       {/* Decorative Top */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.5 }}
-        className="mb-8"
-      >
-        <div className="flex justify-center mb-2">
-          <Heart
-            className="w-16 h-16 text-maroon/80 fill-gold/20"
-            strokeWidth={1}
-          />
+      {isPrint ? (
+        <div className="mb-8">
+          <div className="flex justify-center mb-2">
+            <Heart
+              className="w-16 h-16 text-maroon/80 fill-gold/20"
+              strokeWidth={1}
+            />
+          </div>
+          <div className="h-px w-32 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-4" />
         </div>
-        <div className="h-px w-32 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-4" />
-      </motion.div>
+      ) : (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          className="mb-8"
+        >
+          <div className="flex justify-center mb-2">
+            <Heart
+              className="w-16 h-16 text-maroon/80 fill-gold/20"
+              strokeWidth={1}
+            />
+          </div>
+          <div className="h-px w-32 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-4" />
+        </motion.div>
+      )}
 
       <SectionWrapper delay={0.2}>
         <p className="text-maroon/80 italic text-lg mb-8 md:mb-12 font-serif max-w-2xl mx-auto">

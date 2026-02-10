@@ -1,15 +1,15 @@
 export const weddingData = {
   meta: {
-    title: "Wedding Invitation - Manasi & Nirbhay",
-    description: "Celebrate the wedding of Manasi Gangwar & Dr. Nirbhay Singh",
-    url: "https://manasi-nirbhay-wedding.vercel.app/",
+    title: "Wedding Invitation - Mansi & Nirbhay",
+    description: "Celebrate the wedding of Mansi Gangwar & Dr. Nirbhay Singh",
+    url: "https://mansi-nirbhay-wedding.vercel.app/",
     ogImage: "/image.png",
   },
   intro: {
     text: "With divine blessings, we invite you to celebrate the wedding of",
   },
   bride: {
-    name: "Manasi Gangwar",
+    name: "Mansi Gangwar",
     title: "Daughter of",
     parents: "Mrs. Sushma Gangwar & Mr. Swatantra Kumar Gangwar",
     grandparentsTitle: "Granddaughter of",
@@ -19,9 +19,9 @@ export const weddingData = {
   groom: {
     name: "Dr. Nirbhay Singh",
     title: "Son of",
-    parents: "Mrs. Sadhana Singh & Mr. Dhabasudev Singh Kanojia",
+    parents: "Mrs. Sadhana Singh & Mr. Vasudev Singh Kanojiya",
     grandparentsTitle: "Grandson of",
-    grandparents: "Late Mrs. Sonkali & Late Mr. Bachchan Lal Kanojia",
+    grandparents: "Late Mrs. Sonkali & Late Mr. Bachchan Lal Kanojiya",
     residence: "Sikandra, Agra (U.P.)",
   },
   timeline: {
@@ -56,14 +56,14 @@ export const weddingData = {
   },
   footer: {
     message: "Your gracious presence will be our honor.",
-    signature: "Gangwar & Kanojia Family",
+    signature: "Gangwar & Kanojiya Family",
   },
   share: {
     message:
-      "Inviting you to celebrate the wedding of Manasi & Nirbhay! Join us digitally here: ",
+      "Inviting you to celebrate the wedding of Mansi & Nirbhay! Join us digitally here: ",
   },
   music: {
-    url: "/music/shehnai.mp3",
+    url: "/music/sehnai.mp3",
   },
   background: {
     textureUrl: "https://www.transparenttextures.com/patterns/cream-paper.png",

@@ -15,22 +15,46 @@ export default function AudioPlayer() {
     audioRef.current.loop = true;
 
     // Attempt autoplay (might be blocked)
-    const playPromise = audioRef.current.play();
-    if (playPromise !== undefined) {
-      playPromise
-        .then(() => {
+    const playAudio = async () => {
+      try {
+        if (audioRef.current) {
+          await audioRef.current.play();
           setIsPlaying(true);
-        })
-        .catch(() => {
-          setIsPlaying(false);
-        });
-    }
+        }
+      } catch (err) {
+        console.log("Autoplay blocked, waiting for user interaction");
+        setIsPlaying(false);
+      }
+    };
+
+    playAudio();
+
+    // Add global click listener to enable audio on first user interaction
+    const handleFirstInteraction = () => {
+      if (audioRef.current && audioRef.current.paused) {
+        audioRef.current
+          .play()
+          .then(() => setIsPlaying(true))
+          .catch((e) => console.error("Play failed:", e));
+      }
+      // Remove listeners after first attempt
+      document.removeEventListener("click", handleFirstInteraction);
+      document.removeEventListener("touchstart", handleFirstInteraction);
+      document.removeEventListener("keydown", handleFirstInteraction);
+    };
+
+    document.addEventListener("click", handleFirstInteraction);
+    document.addEventListener("touchstart", handleFirstInteraction);
+    document.addEventListener("keydown", handleFirstInteraction);
 
     return () => {
       if (audioRef.current) {
         audioRef.current.pause();
         audioRef.current = null;
       }
+      document.removeEventListener("click", handleFirstInteraction);
+      document.removeEventListener("touchstart", handleFirstInteraction);
+      document.removeEventListener("keydown", handleFirstInteraction);
     };
   }, []);
 

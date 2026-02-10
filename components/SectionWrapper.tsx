@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
+import { usePrint } from "@/contexts/PrintContext";
 
 interface SectionWrapperProps {
   children: ReactNode;
@@ -9,7 +10,17 @@ interface SectionWrapperProps {
   delay?: number;
 }
 
-export default function SectionWrapper({ children, className = "", delay = 0 }: SectionWrapperProps) {
+export default function SectionWrapper({
+  children,
+  className = "",
+  delay = 0,
+}: SectionWrapperProps) {
+  const isPrint = usePrint();
+
+  if (isPrint) {
+    return <div className={className}>{children}</div>;
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}

@@ -1,40 +1,88 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream: #FFF5E1;
+  --color-cream: #fff5e1;
   --color-maroon: #800020;
-  --color-red-rich: #A50021;
-  --color-gold: #DAA520;
-  --color-gold-light: #FFD700;
-  --color-gold-dark: #B8860B;
-  --color-saffron: #FF9933;
-  
+  --color-red-rich: #a50021;
+  --color-gold: #daa520;
+  --color-gold-light: #ffd700;
+  --color-gold-dark: #b8860b;
+  --color-saffron: #ff9933;
+
+  /* Force legacy colors for html2canvas compatibility */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  /* Force legacy shadows for html2canvas compatibility */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg:
+    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl:
+    0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+
+  --drop-shadow-sm: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
+  --drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1))
+    drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  --drop-shadow-md: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  --drop-shadow-lg: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  --drop-shadow-xl: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  --drop-shadow-2xl: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+
   --font-playfair: var(--font-playfair);
   --font-great-vibes: var(--font-great-vibes);
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-spin-slow: spin 12s linear infinite;
-  
+
   @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
 }
 
 /* Custom Utilities */
 .text-gold-gradient {
-  background: linear-gradient(to right, #B8860B, #FFD700, #B8860B);
+  background: linear-gradient(to right, #b8860b, #ffd700, #b8860b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .bg-gold-gradient {
-  background: linear-gradient(to right, #B8860B, #DAA520, #F4C430, #DAA520, #B8860B);
+  background: linear-gradient(
+    to right,
+    #b8860b,
+    #daa520,
+    #f4c430,
+    #daa520,
+    #b8860b
+  );
 }
 
 .border-gold-gradient {
-  border-image: linear-gradient(to right, #B8860B, #FFD700, #B8860B) 1;
+  border-image: linear-gradient(to right, #b8860b, #ffd700, #b8860b) 1;
 }
 
 body {
@@ -44,6 +92,9 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
 }
 
-h1, h2, h3, .font-script {
+h1,
+h2,
+h3,
+.font-script {
   font-family: var(--font-great-vibes), cursive;
 }
