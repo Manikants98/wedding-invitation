@@ -15,6 +15,7 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(weddingData.meta.url),
   title: weddingData.meta.title,
   description: weddingData.meta.description,
   openGraph: {
