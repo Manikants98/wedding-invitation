@@ -35,7 +35,7 @@ export default function Footer() {
       </SectionWrapper>
 
       <div className="mt-16 text-xs text-maroon/40 font-serif tracking-wider">
-        <p>Digitally Crafted with ❤️ | {new Date().getFullYear()}</p>
+        <p>Digitally Crafted with Divyansh | {new Date().getFullYear()}</p>
       </div>
     </footer>
   );
