@@ -43,10 +43,6 @@ export default function HeroSection() {
                 {weddingData.bride.parents}
               </p>
               <div className="w-16 h-px bg-gold/30 mx-auto my-2" />
-              <p className="text-xs text-gray-600 font-semibold uppercase tracking-wide">
-                {weddingData.bride.grandparentsTitle}
-              </p>
-              <p className="text-sm italic">{weddingData.bride.grandparents}</p>
               <p className="text-xs text-maroon/80 mt-3 font-medium">
                 Resident: {weddingData.bride.residence}
               </p>
@@ -69,11 +65,7 @@ export default function HeroSection() {
               <p className="font-bold text-maroon text-lg">
                 {weddingData.groom.parents}
               </p>
-              <div className="w-16 h-px bg-gold/30 mx-auto my-2" />
-              <p className="text-xs text-gray-600 font-semibold uppercase tracking-wide">
-                {weddingData.groom.grandparentsTitle}
-              </p>
-              <p className="text-sm italic">{weddingData.groom.grandparents}</p>
+
               <p className="text-xs text-maroon/80 mt-3 font-medium">
                 Resident: {weddingData.groom.residence}
               </p>
