@@ -11,7 +11,7 @@ export const weddingDataEn = {
   bride: {
     name: "Kajal Sharma",
     title: "Daughter of",
-    parents: "Mrs. Urja Devi & Mr. Ram Mahesh Tiwari",
+    parents: "Mrs. Rekha Devi & Dr. Manoj Kumar Tiwari",
     grandparentsTitle: "Granddaughter of",
     grandparents: "Mrs. Rekha Devi & Dr. Manoj Kumar Tiwari",
     residence:
@@ -20,10 +20,10 @@ export const weddingDataEn = {
   groom: {
     name: "Toshit Sharma",
     title: "Son of",
-    parents: "Mrs. Rita Devi & Late Mr. Lakshmanvansh Sharma",
+    parents: "Mrs. Rajkumari Devi & Mr. Surendra Kumar Sharma.",
     grandparentsTitle: "Grandson of",
-    grandparents: "Mrs. Rajkumari Devi & Mr. Surendra Kumar Sharma",
-    residence: "Udaypuri Gate, Janpad Aligarh",
+    grandparents: "Mrs. Sita Devi & Late Mr. Lakhpatchandra Sharma",
+    residence: "Udaygarhi Gate, Janpad Aligarh",
   },
   timeline: {
     title: "Wedding Functions",
