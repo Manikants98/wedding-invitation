@@ -3,10 +3,9 @@
 import { Share2, Link as LinkIcon, Check } from "lucide-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { useLanguage } from "@/lib/useLanguage";
+import { weddingData } from "@/lib/wedding-data";
 
 export default function ShareButton() {
-  const { weddingData } = useLanguage();
   const [copied, setCopied] = useState(false);
   const shareText = weddingData.share.message;
 
@@ -17,6 +16,7 @@ export default function ShareButton() {
 
   const handleShare = async () => {
     const url = getUrl();
+
     if (navigator.share) {
       try {
         await navigator.share({

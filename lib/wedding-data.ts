@@ -1,85 +1,78 @@
 export const weddingData = {
   meta: {
-    title: "विवाह निमंत्रण - तोषित एवं काजल",
-    description: "तोषित शर्मा एवं काजल के विवाह समारोह में सादर आमंत्रण",
+    title: "Wedding Invitation - Toshit & Kajal",
+    description: "Celebrate the wedding of Toshit Sharma & Kajal Tiwari",
     url: "https://kashit-wedding.vercel.app/",
     ogImage: "/image.png",
   },
+
   intro: {
-    text: "ईश्वर की असीम कृपा से हम आपको सादर आमंत्रित करते हैं कि आप हमारे साथ विवाह समारोह का आनंद लें",
+    text: "With divine blessings, we invite you to celebrate the wedding of",
   },
 
   bride: {
-    name: "काजल शर्मा",
-    title: "सुपुत्री",
-    parents: "श्रीमती ऊर्जा देवी एवं श्री राम महेश तिवारी",
-    grandparentsTitle: "पौत्री",
-    grandparents: "श्रीमती रेखा देवी एवं डॉ. मनोज कुमार तिवारी",
+    name: "Kajal",
+    title: "Daughter of",
+    parents: "Mrs. Rekha Devi & Dr. Manoj Kumar Tiwari",
+    grandparentsTitle: "Granddaughter of",
+    grandparents: "Mrs. Usha Devi & Dr. Ram Mahesh Tiwari",
     residence:
-      "आवास श्री पैराडाइज अपार्टमेंट, खेड़िया मोड़, शमशाबाद रोड, आगरा",
+      "Om Shri Paradise, Kheria Mod, Agra, Uttar Pradesh, India",
   },
 
   groom: {
-    name: "तोषित शर्मा",
-    title: "सुपुत्र",
-    parents: "श्रीमती रीता देवी एवं स्वर्गीय श्री लक्ष्मणवंश शर्मा",
-    grandparentsTitle: "पौत्र",
-    grandparents: "श्रीमती राजकुमारी देवी एवं श्री सुरेन्द्र कुमार शर्मा",
-    residence: "उदयपुरी गेट, जनपद अलीगढ़",
+    name: "Toshit",
+    title: "Son of",
+    parents: "Mrs. Rajkumari Devi & Mr. Surendra Kumar Sharma",
+    grandparentsTitle: "Grandson of",
+    grandparents: "Mrs. Sita Devi & Mr. Lakhpatchand Sharma",
+    residence: "Udaypuri Gate, District Aligarh, Uttar Pradesh, India",
   },
 
   timeline: {
-    title: "विवाह समारोह",
+    title: "Wedding Functions",
     events: [
       {
-        date: "8 मार्च 2026",
+        date: "8 March 2026, Sunday",
         title: "हल्दी",
         iconType: "sun",
         color: "bg-yellow-500",
-        description: "सायं 4:00 बजे",
+        description: "4:00 PM",
         position: "right",
       },
       {
-        date: "8 मार्च 2026",
+        date: "8 March 2026, Sunday",
         title: "मेहंदी",
         iconType: "flower",
         color: "bg-green-500",
-        description: "सायं 6:00 बजे",
+        description: "6:00 PM",
         position: "left",
       },
       {
-        date: "9 मार्च 2026",
-        title: "घुड़चढ़ी",
-        iconType: "car",
-        color: "bg-red-500",
-        description: "प्रातः 10:00 बजे",
-        position: "right",
-      },
-      {
-        date: "9 मार्च 2026",
+        date: "9 March 2026, Monday",
         title: "बारात प्रस्थान",
         iconType: "car",
         color: "bg-pink-500",
-        description: "प्रातः 11:00 बजे",
-        position: "left",
+        description: "11:00 AM",
+        position: "right",
       },
       {
-        date: "9 मार्च 2026",
-        title: "परिणय-संस्कार (विवाह)",
+        date: "9 March 2026, Monday",
+        title: "शुभ विवाह",
         iconType: "heart",
         color: "bg-maroon",
-        description: "विवाह समारोह",
-        position: "right",
+        description: "Marriage Ceremony",
+        position: "left",
       },
     ],
   },
 
   venue: {
-    title: "विवाह स्थल",
-    name: "निवास स्थान से प्रस्थान",
-    addressLine1: "मकान संख्या 95, अहेरी वाड़ा, मेन मार्केट, बल्केश्वर",
-    addressLine2: "फतेहाबाद रोड होते हुए आगरा के लिए प्रस्थान",
-    mapUrl: "",
+    title: "Wedding Venue",
+    name: "From Residence Departure",
+    addressLine1: "House No. 95, Ahir Wada, Main Market, Ballabhgarh",
+    addressLine2: "Departure towards Dazzling Hotel and Resorts, Fatehabad Road, Agra",
+    mapUrl: "https://maps.app.goo.gl/e6sM5HD9btS3zvxY6",
   },
 
   countdown: {
@@ -88,13 +81,13 @@ export const weddingData = {
 
   footer: {
     message:
-      "इस शुभ अवसर पर आपकी गरिमामयी उपस्थिति एवं आशीर्वाद हमारे लिए सौभाग्य होगा।",
-    signature: "समस्त शर्मा परिवार",
+      "Your gracious presence and blessings on this auspicious occasion will be our honor.",
+    signature: "Sharma and Tiwari Family",
   },
 
   share: {
     message:
-      "आपको चित्र तोषित शर्मा एवं आयु काजल के विवाह समारोह में सादर आमंत्रण! डिजिटल निमंत्रण देखने हेतु यहाँ आएँ: ",
+      "Inviting you to celebrate the wedding of Toshit Sharma & Kajal Tiwari! Join us digitally here: ",
   },
 
   music: {

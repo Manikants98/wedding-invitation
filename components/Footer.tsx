@@ -3,17 +3,15 @@
 import { motion } from "framer-motion";
 import { Heart } from "lucide-react";
 import SectionWrapper from "./SectionWrapper";
-import { useLanguage } from "@/lib/useLanguage";
+import { weddingData } from "@/lib/wedding-data";
 import DividerPattern from "./decorations/DividerPattern";
 import { Flower2 } from "lucide-react";
 
 export default function Footer() {
-  const { weddingData } = useLanguage();
-
   return (
     <footer className="py-12 px-6 text-center">
       <SectionWrapper>
-        <div className="max-w-md mx-auto">
+        <div className=" mx-auto">
           <div className="flex justify-center mb-4">
             <Flower2
               className="w-12 h-12 text-maroon/80 animate-spin-slow"

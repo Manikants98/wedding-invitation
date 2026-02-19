@@ -47,13 +47,13 @@ export const metadata: Metadata = {
     title: weddingData.meta.title,
     description: weddingData.meta.description,
     url: weddingData.meta.url,
-    siteName: "Manshi & Nirbhay Wedding",
+    siteName: "Toshit & Kajal Wedding",
     images: [
       {
         url: weddingData.meta.ogImage,
         width: 1200,
         height: 630,
-        alt: "Wedding Invitation - Manshi & Nirbhay",
+        alt: "Wedding Invitation - Toshit & Kajal",
       },
     ],
     type: "website",

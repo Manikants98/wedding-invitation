@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useLanguage } from "@/lib/useLanguage";
 import SectionWrapper from "./SectionWrapper";
+import { weddingData } from "@/lib/wedding-data";
 
 interface TimeLeft {
   days: number;
@@ -12,9 +12,7 @@ interface TimeLeft {
 }
 
 export default function Countdown() {
-  const { weddingData } = useLanguage();
-
-  const calculateTimeLeft = (): TimeLeft => {
+  const calculateTimeRemaining = () => {
     const weddingDate = new Date(weddingData.countdown.targetDate);
     const now = new Date();
     const difference = weddingDate.getTime() - now.getTime();
@@ -31,11 +29,11 @@ export default function Countdown() {
     return { days: 0, hours: 0, minutes: 0, seconds: 0 };
   };
 
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeRemaining());
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
+      setTimeLeft(calculateTimeRemaining());
     }, 1000);
 
     return () => clearInterval(timer);
