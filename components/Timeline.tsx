@@ -1,10 +1,13 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { Heart, Calendar, Music, Sun, Car, Utensils, Flower } from "lucide-react";
 import SectionWrapper from "./SectionWrapper";
-import { Calendar, Heart, Music, Sun, Car, Utensils, Flower } from "lucide-react";
-import { weddingData } from "@/lib/wedding-data";
+import { useLanguage } from "@/lib/useLanguage";
 
 export default function Timeline() {
+  const { weddingData } = useLanguage();
+
   const getIcon = (type: string) => {
     switch (type) {
       case "sun": return <Sun className="w-5 h-5 md:w-6 md:h-6 text-white" />;

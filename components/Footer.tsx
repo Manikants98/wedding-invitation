@@ -1,11 +1,15 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { Heart } from "lucide-react";
 import SectionWrapper from "./SectionWrapper";
-import { Flower2 } from "lucide-react";
-import { weddingData } from "@/lib/wedding-data";
+import { useLanguage } from "@/lib/useLanguage";
 import DividerPattern from "./decorations/DividerPattern";
+import { Flower2 } from "lucide-react";
 
 export default function Footer() {
+  const { weddingData } = useLanguage();
+
   return (
     <footer className="py-12 px-6 text-center">
       <SectionWrapper>
@@ -17,7 +21,7 @@ export default function Footer() {
             />
           </div>
 
-          <h2 className="text-3xl md:text-5xl text-maroon mb-6 font-script drop-shadow-sm">
+          <h2 className="text-3xl md:text-3xl text-maroon font-hindi-text mb-6 drop-shadow-sm">
             {weddingData.footer.message}
           </h2>
 
@@ -34,9 +38,6 @@ export default function Footer() {
         </div>
       </SectionWrapper>
 
-      <div className="mt-16 text-xs text-maroon/40 font-serif tracking-wider">
-        <p>Digitally Crafted with ❤️ | {new Date().getFullYear()}</p>
-      </div>
     </footer>
   );
 }

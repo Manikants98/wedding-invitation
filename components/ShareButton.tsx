@@ -3,9 +3,10 @@
 import { Share2, Link as LinkIcon, Check } from "lucide-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { weddingData } from "@/lib/wedding-data";
+import { useLanguage } from "@/lib/useLanguage";
 
 export default function ShareButton() {
+  const { weddingData } = useLanguage();
   const [copied, setCopied] = useState(false);
   const shareText = weddingData.share.message;
 

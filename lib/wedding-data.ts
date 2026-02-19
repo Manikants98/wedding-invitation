@@ -1,112 +1,106 @@
 export const weddingData = {
   meta: {
-    title: "Wedding Invitation - Shreya & Vicky",
-    description: "Celebrate the wedding of Ayush Shreya & Vicky Mahor",
-    url: "https://shreya-vicky-wedding.vercel.app/",
+    title: "विवाह निमंत्रण - तोषित एवं काजल",
+    description: "तोषित शर्मा एवं काजल के विवाह समारोह में सादर आमंत्रण",
+    url: "https://kashit-wedding.vercel.app/",
     ogImage: "/image.png",
   },
   intro: {
-    text: "With divine blessings, we invite you to celebrate the wedding of",
+    text: "ईश्वर की असीम कृपा से हम आपको सादर आमंत्रित करते हैं कि आप हमारे साथ विवाह समारोह का आनंद लें",
   },
+
   bride: {
-    name: "Shreya",
-    title: "Daughter of",
-    parents: "Mr. Rajesh Sharma",
-    grandparentsTitle: "Granddaughter of",
-    grandparents: "[Grandparents' names from card]",
-    residence: "Rambagh, Agra, Utter Pradesh",
+    name: "काजल शर्मा",
+    title: "सुपुत्री",
+    parents: "श्रीमती ऊर्जा देवी एवं श्री राम महेश तिवारी",
+    grandparentsTitle: "पौत्री",
+    grandparents: "श्रीमती रेखा देवी एवं डॉ. मनोज कुमार तिवारी",
+    residence:
+      "आवास श्री पैराडाइज अपार्टमेंट, खेड़िया मोड़, शमशाबाद रोड, आगरा",
   },
+
   groom: {
-    name: "Vicky",
-    title: "Son of",
-    parents: "Mr. Rajendra Babu",
-    grandparentsTitle: "Grandson of",
-    grandparents: "[Grandparents' names from card]",
-    residence: "South Delhi, Delhi",
+    name: "तोषित शर्मा",
+    title: "सुपुत्र",
+    parents: "श्रीमती रीता देवी एवं स्वर्गीय श्री लक्ष्मणवंश शर्मा",
+    grandparentsTitle: "पौत्र",
+    grandparents: "श्रीमती राजकुमारी देवी एवं श्री सुरेन्द्र कुमार शर्मा",
+    residence: "उदयपुरी गेट, जनपद अलीगढ़",
   },
+
   timeline: {
-    title: "Wedding Functions",
+    title: "विवाह समारोह",
     events: [
       {
-        date: "5 March 2026",
-        title: "शुभ लगन",
-        iconType: "sun",
-        color: "bg-yellow-500",
-        description: "10:00 AM",
-        position: "right",
-      },
-      {
-        date: "6 March 2026",
+        date: "8 मार्च 2026",
         title: "हल्दी",
         iconType: "sun",
         color: "bg-yellow-500",
-        description: "11:00 AM",
-        position: "left",
-      },
-      {
-        date: "8 March 2026",
-        title: "संगीत",
-        iconType: "music",
-        color: "bg-pink-500",
-        description: "2:00 PM",
+        description: "सायं 4:00 बजे",
         position: "right",
       },
       {
-        date: "8 March 2026",
+        date: "8 मार्च 2026",
         title: "मेहंदी",
         iconType: "flower",
         color: "bg-green-500",
-        description: "5:00 PM",
+        description: "सायं 6:00 बजे",
         position: "left",
       },
       {
-        date: "9 March 2026",
-        title: "बारात स्वागत",
+        date: "9 मार्च 2026",
+        title: "घुड़चढ़ी",
         iconType: "car",
         color: "bg-red-500",
-        description: "7:00 PM",
+        description: "प्रातः 10:00 बजे",
         position: "right",
       },
       {
-        date: "9 March 2026",
-        title: "प्रीतिभोज",
-        iconType: "utensils",
-        color: "bg-indigo-500",
-        description: "8:00 PM",
+        date: "9 मार्च 2026",
+        title: "बारात प्रस्थान",
+        iconType: "car",
+        color: "bg-pink-500",
+        description: "प्रातः 11:00 बजे",
         position: "left",
       },
       {
-        date: "10 March 2026",
-        title: "भींगी पलकें",
+        date: "9 मार्च 2026",
+        title: "परिणय-संस्कार (विवाह)",
         iconType: "heart",
         color: "bg-maroon",
-        description: "7:00 AM",
+        description: "विवाह समारोह",
         position: "right",
       },
     ],
   },
+
   venue: {
-    title: "Wedding Venue",
-    name: "मिलन गार्डन",
-    addressLine1: "एन ब्लॉक, सैनिक फार्म",
-    addressLine2: "साउथ दिल्ली",
-    mapUrl:
-      "https://www.google.com/maps/search/?api=1&query=Milan+Garden+N+Block+Sainik+Farm+South+Delhi",
+    title: "विवाह स्थल",
+    name: "निवास स्थान से प्रस्थान",
+    addressLine1: "मकान संख्या 95, अहेरी वाड़ा, मेन मार्केट, बल्केश्वर",
+    addressLine2: "फतेहाबाद रोड होते हुए आगरा के लिए प्रस्थान",
+    mapUrl: "",
   },
+
   countdown: {
-    targetDate: "2026-03-10T00:00:00", 
+    targetDate: "2026-03-09T00:00:00",
   },
+
   footer: {
-    message: "Your gracious presence will be our honor.",
-    signature: "Sharma Family",
+    message:
+      "इस शुभ अवसर पर आपकी गरिमामयी उपस्थिति एवं आशीर्वाद हमारे लिए सौभाग्य होगा।",
+    signature: "समस्त शर्मा परिवार",
   },
+
   share: {
     message:
-      "Inviting you to celebrate the wedding of Shreya & Vicky! Join us digitally here: ",
+      "आपको चित्र तोषित शर्मा एवं आयु काजल के विवाह समारोह में सादर आमंत्रण! डिजिटल निमंत्रण देखने हेतु यहाँ आएँ: ",
   },
+
   music: {
     url: "/music/sehnai.mp3",
   },
+
   background: {
     textureUrl: "https://www.transparenttextures.com/patterns/cream-paper.png",
   },

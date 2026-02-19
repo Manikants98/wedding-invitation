@@ -8,16 +8,27 @@
   --color-gold-light: #FFD700;
   --color-gold-dark: #B8860B;
   --color-saffron: #FF9933;
-  
+
   --font-playfair: var(--font-playfair);
   --font-great-vibes: var(--font-great-vibes);
+  --font-dancing-script: var(--font-dancing-script);
+  --font-pacifico: var(--font-pacifico);
+  --font-noto-sans-devanagari: var(--font-noto-sans-devanagari);
+  --font-kalam: var(--font-kalam);
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-spin-slow: spin 12s linear infinite;
-  
+
   @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
   }
 }
 
@@ -44,6 +55,27 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
 }
 
-h1, h2, h3, .font-script {
+h1,
+h2,
+h3,
+.font-script {
   font-family: var(--font-great-vibes), cursive;
+}
+
+.font-wedding-heading {
+  font-family: var(--font-dancing-script), cursive;
+  font-weight: 700;
+}
+
+.font-wedding-subheading {
+  font-family: var(--font-pacifico), cursive;
+}
+
+.font-hindi-text {
+  font-family: var(--font-noto-sans-devanagari), 'Kohinoor Devanagari', 'Noto Sans Devanagari', serif;
+}
+
+.font-name {
+  font-family: var(--font-kalam), cursive;
+  font-weight: 400;
 }

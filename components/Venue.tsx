@@ -1,10 +1,13 @@
 "use client";
 
-import { MapPin } from "lucide-react";
+import { motion } from "framer-motion";
+import { Heart, MapPin } from "lucide-react";
 import SectionWrapper from "./SectionWrapper";
-import { weddingData } from "@/lib/wedding-data";
+import { useLanguage } from "@/lib/useLanguage";
 
 export default function Venue() {
+  const { weddingData } = useLanguage();
+
   return (
     <SectionWrapper className="py-12 px-6 text-center max-w-3xl mx-auto">
       <div className="flex flex-col items-center p-8 border-4 border-double border-gold/30 rounded-lg bg-white/30 backdrop-blur-sm shadow-lg">

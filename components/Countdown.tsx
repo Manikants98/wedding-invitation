@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/lib/useLanguage";
 import SectionWrapper from "./SectionWrapper";
-import { weddingData } from "@/lib/wedding-data";
 
 interface TimeLeft {
   days: number;
@@ -12,6 +12,8 @@ interface TimeLeft {
 }
 
 export default function Countdown() {
+  const { weddingData } = useLanguage();
+
   const calculateTimeLeft = (): TimeLeft => {
     const weddingDate = new Date(weddingData.countdown.targetDate);
     const now = new Date();
