@@ -41,7 +41,7 @@ export default function Countdown() {
 
   const TimeUnit = ({ value, label }: { value: number; label: string }) => (
     <div className="flex flex-col items-center mx-2 md:mx-4">
-      <div className="bg-gradient-to-br from-maroon to-red-900 border-2 border-gold w-16 h-16 md:w-20 md:h-20 rounded-lg flex items-center justify-center mb-2 shadow-xl relative overflow-hidden group">
+      <div className="bg-linear-to-br from-maroon to-red-900 border-2 border-gold w-16 h-16 md:w-20 md:h-20 rounded-lg flex items-center justify-center mb-2 shadow-xl relative overflow-hidden group">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/black-scales.png')] opacity-20" />
         <span className="text-2xl md:text-3xl font-bold text-gold font-serif relative z-10 drop-shadow-md group-hover:scale-110 transition-transform duration-300">
           {value.toString().padStart(2, "0")}

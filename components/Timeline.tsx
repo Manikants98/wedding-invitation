@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Heart, Calendar, Music, Sun, Car, Utensils, Flower } from "lucide-react";
 import SectionWrapper from "./SectionWrapper";
 import { weddingData } from "@/lib/wedding-data";
@@ -28,7 +27,7 @@ export default function Timeline() {
 
       <div className="relative">
         {/* Vertical Timeline Line - Mobile & Desktop */}
-        <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-gold/20 via-gold to-gold/20 md:-translate-x-1/2" />
+        <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-0.5 bg-linear-to-b from-gold/20 via-gold to-gold/20 md:-translate-x-1/2" />
 
         <div className="space-y-8 md:space-y-12">
           {weddingData.timeline.events.map((event, index) => (
@@ -56,7 +55,7 @@ export default function Timeline() {
                   ? 'md:mr-auto md:pr-0'
                   : 'md:ml-auto md:pl-0'
                   }`}>
-                  <div className="group relative p-5 md:p-6 bg-gradient-to-br from-white via-white to-cream/50 backdrop-blur-sm rounded-xl border-2 border-gold/30 shadow-lg hover:shadow-2xl hover:border-gold/60 transition-all duration-300">
+                  <div className="group relative p-5 md:p-6 bg-linear-to-br from-white via-white to-cream/50 backdrop-blur-sm rounded-xl border-2 border-gold/30 shadow-lg hover:shadow-2xl hover:border-gold/60 transition-all duration-300">
 
                     {/* Decorative Corner Accent */}
                     <div className="absolute top-0 right-0 w-20 h-20 opacity-5 pointer-events-none overflow-hidden rounded-tr-xl">
@@ -66,7 +65,7 @@ export default function Timeline() {
                     </div>
 
                     {/* Subtle Glow Effect */}
-                    <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 rounded-xl bg-linear-to-br from-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                     <div className="relative z-10">
                       {/* Title */}
@@ -76,7 +75,7 @@ export default function Timeline() {
 
                       {/* Date */}
                       <div className="flex items-center text-gold-dark font-medium text-sm md:text-base mb-3 pb-3 border-b border-gold/20">
-                        <Calendar className="w-4 h-4 mr-2 flex-shrink-0" />
+                        <Calendar className="w-4 h-4 mr-2 shrink-0" />
                         <time>{event.date}</time>
                       </div>
 

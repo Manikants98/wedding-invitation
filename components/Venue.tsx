@@ -9,7 +9,7 @@ export default function Venue() {
   return (
     <SectionWrapper className="py-12 px-6 text-center max-w-3xl mx-auto">
       <div className="flex flex-col items-center p-8 border-4 border-double border-gold/30 rounded-lg bg-white/30 backdrop-blur-sm shadow-lg">
-        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-maroon to-red-900 text-gold border-2 border-gold flex items-center justify-center mb-6 shadow-lg">
+        <div className="w-16 h-16 rounded-full bg-linear-to-br from-maroon to-red-900 text-gold border-2 border-gold flex items-center justify-center mb-6 shadow-lg">
           <MapPin size={32} />
         </div>
 
@@ -29,7 +29,7 @@ export default function Venue() {
           href={weddingData.venue.mapUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-maroon to-red-900 text-gold rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gold/50"
+          className="inline-flex items-center gap-2 px-8 py-3 bg-linear-to-r from-maroon to-red-900 text-gold rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gold/50"
         >
           <MapPin size={18} />
           View on Google Maps

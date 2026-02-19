@@ -21,7 +21,7 @@ export default function HeroSection() {
             strokeWidth={1}
           />
         </div>
-        <div className="h-px w-32 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-4" />
+        <div className="h-px w-32 bg-linear-to-r from-transparent via-gold to-transparent mx-auto mt-4" />
       </motion.div>
 
       <SectionWrapper delay={0.2}>
@@ -30,9 +30,9 @@ export default function HeroSection() {
         </p>
       </SectionWrapper>
 
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-5">
         {/* Bride */}
-        <SectionWrapper delay={0.4} className="w-full max-w-md">
+        <SectionWrapper delay={0.4} className="w-full max-w-122.5">
           <div className="relative py-8 px-5 border-4 border-double border-gold/40 bg-white/40 backdrop-blur-sm rounded-lg hover:bg-white/50 transition-colors duration-300 shadow-lg">
             <h2 className="text-4xl md:text-5xl text-maroon mb-4 drop-shadow-sm font-name">
               {weddingData.bride.name}
@@ -60,7 +60,7 @@ export default function HeroSection() {
         </SectionWrapper>
 
         {/* Groom */}
-        <SectionWrapper delay={0.8} className="w-full max-w-md">
+        <SectionWrapper delay={0.8} className="w-full max-w-122.5">
           <div className="relative py-8 px-5 border-4 border-double border-gold/40 bg-white/40 backdrop-blur-sm rounded-lg hover:bg-white/50 transition-colors duration-300 shadow-lg">
             <h2 className="text-4xl md:text-5xl text-maroon mb-4 drop-shadow-sm font-name">
               {weddingData.groom.name}
