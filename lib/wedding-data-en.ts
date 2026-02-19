@@ -73,9 +73,9 @@ export const weddingDataEn = {
   venue: {
     title: "Wedding Venue",
     name: "Departure from Residence",
-    addressLine1: "House No. 95, Ahri Wada, Main Market, Baleshwar",
+    addressLine1: "Brij Farm House, near Kaveri Vihar Phase - ll, Shamshabad Road, Agra 282004",
     addressLine2: "Via Fatehabad Road to Agra",
-    mapUrl: "",
+    mapUrl: "https://www.google.com/maps/place/Shree+Braj+Farm+House/@27.1429589,78.0480317,17z/data=!3m1!4b1!4m6!3m5!1s0x3974716f79ee88a1:0xed60d5408862db22!8m2!3d27.1429589!4d78.0506066!16s%2Fg%2F1q66y_b5y?entry=ttu&g_ep=EgoyMDI2MDIxNi4wIKXMDSoASAFQAw%3D%3D",
   },
   countdown: {
     targetDate: "2026-03-09T00:00:00",
