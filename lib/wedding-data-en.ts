@@ -15,7 +15,7 @@ export const weddingDataEn = {
     grandparentsTitle: "Granddaughter of",
     grandparents: "Mrs. Rekha Devi & Dr. Manoj Kumar Tiwari",
     residence:
-      "Resident: Shri Paradise Apartment, Kheria Mod, Shamshabad Road, Agra",
+      "Resident: OM Shri Paradise Apartment, Kehrai Mod, Shamshabad Road, Agra",
   },
   groom: {
     name: "Toshit Sharma",
@@ -23,7 +23,7 @@ export const weddingDataEn = {
     parents: "Mrs. Rajkumari Devi & Mr. Surendra Kumar Sharma.",
     grandparentsTitle: "Grandson of",
     grandparents: "Mrs. Sita Devi & Late Mr. Lakhpatchandra Sharma",
-    residence: "Udaygarhi Gate, Janpad Aligarh",
+    residence: "Udaygarhi Khair, District Aligarh",
   },
   timeline: {
     title: "Wedding Functions",
