@@ -1,12 +1,10 @@
 "use client";
 
-import { Share2, Link as LinkIcon, Check } from "lucide-react";
-import { useState } from "react";
+import { Share2 } from "lucide-react";
 import { motion } from "framer-motion";
 import { weddingData } from "@/lib/wedding-data";
 
 export default function ShareButton() {
-  const [copied, setCopied] = useState(false);
   const shareText = weddingData.share.message;
 
   // In a real scenario, this would be the actual deployed URL
@@ -36,28 +34,8 @@ export default function ShareButton() {
     }
   };
 
-  const handleCopy = () => {
-    const url = getUrl();
-    navigator.clipboard.writeText(url).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    });
-  };
-
   return (
-    <div className="fixed bottom-6 right-24 z-50 flex gap-3">
-      <motion.button
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        onClick={handleCopy}
-        className="p-3 rounded-full bg-cream/80 text-maroon border border-gold shadow-lg backdrop-blur-sm hover:bg-gold/20 transition-colors"
-        aria-label="Copy Link"
-      >
-        {copied ? <Check size={20} /> : <LinkIcon size={20} />}
-      </motion.button>
-
+    <div className="fixed bottom-4 right-4 z-50">
       <motion.button
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
