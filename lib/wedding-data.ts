@@ -15,8 +15,8 @@ export const weddingData = {
     title: "Son of",
     parents: "Mrs. Rajkumari Devi & Mr. Surendra Kumar Sharma",
     grandparentsTitle: "Grandson of",
-    grandparents: "Mrs. Sita Devi & Mr. Lakhpatchand Sharma",
-    residence: "Udaypuri Gate, District Aligarh, Uttar Pradesh, India",
+    grandparents: "Mrs. Sita Devi & Late Lakhpat Chand Sharma",
+    residence: "Udaigarhi, District Aligarh, Uttar Pradesh, India",
   },
 
   groom: {
@@ -61,7 +61,7 @@ export const weddingData = {
   title: "Wedding Ceremony",
   iconType: "heart",
   color: "bg-maroon",
-  description: "Marriage Ceremony",
+  description: "08:00 PM",
   position: "left",
 },
     ],
@@ -82,7 +82,7 @@ export const weddingData = {
   footer: {
     message:
       "Your gracious presence and blessings on this auspicious occasion will be our honor.",
-    signature: "Sharma and Tiwari Family",
+    signature: "Sharma Family",
   },
 
   share: {
