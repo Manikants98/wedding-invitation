@@ -71,8 +71,8 @@ export const weddingData = {
     title: "Wedding Venue",
     name: "From Residence Departure",
     addressLine1: "House No. 95, Ahir Wada, Main Market, Ballabhgarh",
-    addressLine2: "Departure towards Dazzling Hotel and Resorts, Fatehabad Road, Agra",
-    mapUrl: "https://maps.app.goo.gl/e6sM5HD9btS3zvxY6",
+    addressLine2: "Brij Farm House, Near Kaveri Vihar Phase - ll, Shamshabad Road, Agra",
+    mapUrl: "https://maps.app.goo.gl/iAPifKCkLTbTjPwu5?g_st=ic",
   },
 
   countdown: {
