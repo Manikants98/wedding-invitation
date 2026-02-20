@@ -11,7 +11,7 @@ export const weddingData = {
   },
 
   bride: {
-   name: "Toshit",
+   name: "Toshit Sharma",
     title: "Son of",
     parents: "Mrs. Rajkumari Devi & Mr. Surendra Kumar Sharma",
     grandparentsTitle: "Grandson of",
@@ -20,7 +20,7 @@ export const weddingData = {
   },
 
   groom: {
-    name: "Kajal",
+    name: "Kajal Tiwari",
     title: "Daughter of",
     parents: "Mrs. Rekha Devi & Dr. Manoj Kumar Tiwari",
     grandparentsTitle: "Granddaughter of",

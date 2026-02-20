@@ -7,7 +7,7 @@ import { weddingData } from "@/lib/wedding-data";
 
 export default function Venue() {
   return (
-    <SectionWrapper className="py-12 px-6 text-center max-w-3xl mx-auto">
+    <SectionWrapper className="py-12 px-2 text-center max-w-3xl mx-auto">
       <div className="flex flex-col items-center p-8 border-4 border-double border-gold/30 rounded-lg bg-white/30 backdrop-blur-sm shadow-lg">
         <div className="w-16 h-16 rounded-full bg-linear-to-br from-maroon to-red-900 text-gold border-2 border-gold flex items-center justify-center mb-6 shadow-lg">
           <MapPin size={32} />
