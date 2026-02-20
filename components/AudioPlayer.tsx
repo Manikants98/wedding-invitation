@@ -1,76 +1,81 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { weddingData } from "@/lib/wedding-data";
 
 export default function AudioPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const isPlayingRef = useRef(false);
+  const [showPrompt, setShowPrompt] = useState(false);
 
   useEffect(() => {
-    // Initialize audio
-    audioRef.current = new Audio(weddingData.music.url);
-    audioRef.current.loop = true;
-    audioRef.current.muted = false;
-    audioRef.current.autoplay = true;
-    (audioRef.current as any).playsInline = true;
-    audioRef.current.preload = "auto";
+    const audio = new Audio(weddingData.music.url);
+    audio.loop = true;
+    audio.volume = 0.5;
+    audioRef.current = audio;
 
-    // Attempt autoplay (might be blocked)
-    const attemptPlay = () => {
-      if (!audioRef.current || isPlayingRef.current) return;
-      audioRef.current
-        .play()
-        .then(() => {
-          isPlayingRef.current = true;
-        })
-        .catch(() => {
-          isPlayingRef.current = false;
-        });
-    };
+    // Try silent autoplay first (muted always works)
+    audio.muted = true;
+    audio.play()
+      .then(() => {
+        // Autoplay worked muted — now try to unmute
+        audio.muted = false;
+        isPlayingRef.current = true;
+      })
+      .catch(() => {
+        // Autoplay blocked entirely — wait for interaction
+        setShowPrompt(true);
+      });
 
-    attemptPlay();
-
-    // Try on first interaction
-    const tryPlayOnFirstInteraction = () => {
-      if (!audioRef.current || isPlayingRef.current) return;
-      audioRef.current
-        .play()
-        .then(() => {
-          isPlayingRef.current = true;
-        })
-        .catch(() => {
-          isPlayingRef.current = false;
-        });
-    };
-
-    // Multiple listeners to catch first interaction
-    window.addEventListener("click", tryPlayOnFirstInteraction, { once: true });
-    window.addEventListener("touchstart", tryPlayOnFirstInteraction, { once: true });
-    window.addEventListener("keydown", tryPlayOnFirstInteraction, { once: true });
-
-    // Fallback: retry every 2s for up to 10s (very aggressive browsers)
-    const retryInterval = setInterval(() => {
+    const unlockAudio = () => {
       if (isPlayingRef.current) {
-        clearInterval(retryInterval);
+        setShowPrompt(false);
         return;
       }
-      attemptPlay();
-    }, 2000);
-    const retryTimeout = setTimeout(() => clearInterval(retryInterval), 10000);
+
+      audio.muted = false;
+      audio.play()
+        .then(() => {
+          isPlayingRef.current = true;
+          setShowPrompt(false);
+        })
+        .catch(() => { });
+    };
+
+    window.addEventListener("click", unlockAudio, { once: true });
+    window.addEventListener("touchstart", unlockAudio, { once: true });
+    window.addEventListener("keydown", unlockAudio, { once: true });
 
     return () => {
-      window.removeEventListener("click", tryPlayOnFirstInteraction);
-      window.removeEventListener("touchstart", tryPlayOnFirstInteraction);
-      window.removeEventListener("keydown", tryPlayOnFirstInteraction);
-      clearInterval(retryInterval);
-      clearTimeout(retryTimeout);
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current = null;
-      }
+      window.removeEventListener("click", unlockAudio);
+      window.removeEventListener("touchstart", unlockAudio);
+      window.removeEventListener("keydown", unlockAudio);
+      audio.pause();
+      audioRef.current = null;
     };
   }, []);
 
-  return null;
+  if (!showPrompt) return null;
+
+  return (
+    <div
+      className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 
+                 bg-white/90 backdrop-blur-sm text-gray-700 
+                 px-5 py-3 rounded-full shadow-lg text-sm 
+                 animate-bounce cursor-pointer border border-gray-200"
+      onClick={() => {
+        const audio = audioRef.current;
+        if (!audio) return;
+        audio.muted = false;
+        audio.play()
+          .then(() => {
+            isPlayingRef.current = true;
+            setShowPrompt(false);
+          })
+          .catch(() => { });
+      }}
+    >
+      🎵 Tap anywhere to play music
+    </div>
+  );
 }
