@@ -11,6 +11,15 @@ export const weddingData = {
   },
 
   bride: {
+   name: "Toshit",
+    title: "Son of",
+    parents: "Mrs. Rajkumari Devi & Mr. Surendra Kumar Sharma",
+    grandparentsTitle: "Grandson of",
+    grandparents: "Mrs. Sita Devi & Mr. Lakhpatchand Sharma",
+    residence: "Udaypuri Gate, District Aligarh, Uttar Pradesh, India",
+  },
+
+  groom: {
     name: "Kajal",
     title: "Daughter of",
     parents: "Mrs. Rekha Devi & Dr. Manoj Kumar Tiwari",
@@ -20,50 +29,41 @@ export const weddingData = {
       "Om Shri Paradise, Kheria Mod, Agra, Uttar Pradesh, India",
   },
 
-  groom: {
-    name: "Toshit",
-    title: "Son of",
-    parents: "Mrs. Rajkumari Devi & Mr. Surendra Kumar Sharma",
-    grandparentsTitle: "Grandson of",
-    grandparents: "Mrs. Sita Devi & Mr. Lakhpatchand Sharma",
-    residence: "Udaypuri Gate, District Aligarh, Uttar Pradesh, India",
-  },
-
   timeline: {
     title: "Wedding Functions",
     events: [
-      {
-        date: "8 March 2026, Sunday",
-        title: "हल्दी",
-        iconType: "sun",
-        color: "bg-yellow-500",
-        description: "4:00 PM",
-        position: "right",
-      },
-      {
-        date: "8 March 2026, Sunday",
-        title: "मेहंदी",
-        iconType: "flower",
-        color: "bg-green-500",
-        description: "6:00 PM",
-        position: "left",
-      },
-      {
-        date: "9 March 2026, Monday",
-        title: "बारात प्रस्थान",
-        iconType: "car",
-        color: "bg-pink-500",
-        description: "11:00 AM",
-        position: "right",
-      },
-      {
-        date: "9 March 2026, Monday",
-        title: "शुभ विवाह",
-        iconType: "heart",
-        color: "bg-maroon",
-        description: "Marriage Ceremony",
-        position: "left",
-      },
+     {
+  date: "8 March 2026, Sunday",
+  title: "Haldi Ceremony",
+  iconType: "sun",
+  color: "bg-yellow-500",
+  description: "4:00 PM",
+  position: "right",
+},
+{
+  date: "8 March 2026, Sunday",
+  title: "Mehendi Ceremony",
+  iconType: "flower",
+  color: "bg-green-500",
+  description: "6:00 PM",
+  position: "left",
+},
+{
+  date: "9 March 2026, Monday",
+  title: "Baraat Departure",
+  iconType: "car",
+  color: "bg-pink-500",
+  description: "11:00 AM",
+  position: "right",
+},
+{
+  date: "9 March 2026, Monday",
+  title: "Wedding Ceremony",
+  iconType: "heart",
+  color: "bg-maroon",
+  description: "Marriage Ceremony",
+  position: "left",
+},
     ],
   },
 
